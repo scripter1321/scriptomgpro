@@ -9,7 +9,7 @@ local character = player.Character or player.CharacterAdded:Wait()
 local reqrebremote = game:GetService("ReplicatedStorage").BrickRebirthRequest
 gui.CreateTab("Farming")
 local function ToEnd()
-    character.HumanoidRootPart.CFrame = CFrame.new(4899, 330, 647)
+    character.HumanoidRootPart.CFrame = CFrame.new(4899, 320, 647)
 end
 local function ReqRebirth()
     reqrebremote:FireServer()
@@ -18,13 +18,13 @@ gui.CreateButton("10M wins", "Farming", ToEnd)
 gui.CreateToggle("Auto Farm Wins", "Farming", function(GetToggle)
     while GetToggle() do
         ToEnd()
-        task.wait(0.5)
+        task.wait(0.2)
     end
 end)
 gui.CreateButton("Rebirth", "Farming", ReqRebirth)
 gui.CreateToggle("Auto Rebirth", "Farming", function(GetToggle)
     while GetToggle() do
         ReqRebirth()
-        task.wait(0.5)
+        task.wait(0.2)
     end
 end)
