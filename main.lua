@@ -18,7 +18,7 @@ gui.CreateButton("10M wins", "Farming", ToEnd)
 gui.CreateToggle("Auto Farm Wins", "Farming", function(GetToggle)
     while GetToggle() do
         ToEnd()
-        task.wait(1)
+        task.wait(0.5)
     end
 end)
 gui.CreateButton("Rebirth", "Farming", ReqRebirth)
