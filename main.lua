@@ -9,7 +9,7 @@ local character = player.Character or player.CharacterAdded:Wait()
 local reqrebremote = game:GetService("ReplicatedStorage").BrickRebirthRequest
 gui.CreateTab("Farming")
 local function ToEnd()
-    character.HumanoidRootPart.CFrame = CFrame.new(4899, 310, 647)
+    character.HumanoidRootPart.CFrame = CFrame.new(4899, 319, 647)
 end
 local function ReqRebirth()
     reqrebremote:FireServer()
